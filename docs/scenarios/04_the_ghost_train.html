@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scenario 04: The Ghost Train | Playa del Crimen</title>
+    <meta name="description" content="Analysis of information manipulation campaigns and disinformation networks.">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-scenario">
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-inner">
+            <a href="../index.html" class="header-logo">
+                <span class="logo-main">Playa del <span>Crimen</span></span>
+                <span class="logo-sub">Intelligence Training Platform</span>
+            </a>
+
+            <nav class="header-nav">
+                <a href="../index.html">← Scenarios</a>
+                <a href="https://github.com/CCHUTZ/playa-del-crimen-en" target="_blank" rel="noopener">GitHub ↗</a>
+            </nav>
+
+            <div class="header-status">
+                <span class="status-dot"></span>
+                <span class="mono">SCENARIO 04: THE GHOST TRAIN</span>
+            </div>
+
+            <button class="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== LAYOUT WRAPPER ===== -->
+    <div class="layout-scenario">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+        <p class="sidebar-label">Operation Phases</p>
+        <ul class="sidebar-nav">
+            <li><a href="#briefing"><span class="nav-icon">◈</span> Briefing</a></li>
+            <li><a href="#team"><span class="nav-icon">◈</span> Team Structure</a></li>
+        </ul>
+        <div class="sidebar-divider"></div>
+        <ul class="sidebar-nav">
+            <li><a href="../index.html"><span class="nav-icon">←</span> Back to Home</a></li>
+        </ul>
+    </aside>
+
+    <!-- ===== CONTENT ===== -->
+    <div class="scenario-content">
+
+        <!-- Scenario Hero -->
+        <div class="scenario-hero">
+            <div class="scenario-meta">
+                <span class="scenario-number">SCENARIO 04</span>
+                <span class="scenario-category">OSINT · Disinformation · Network Analysis</span>
+            </div>
+            <h1>The Ghost Train</h1>
+            <p class="scenario-tagline">Analysis of information manipulation campaigns and disinformation networks.</p>
+        </div>
+
+        <!-- Mobile nav -->
+        <details class="mobile-nav-toggle">
+            <summary>Operation Phases</summary>
+            <ul class="sidebar-nav">
+            <li><a href="#briefing"><span class="nav-icon">◈</span> Briefing</a></li>
+            <li><a href="#team"><span class="nav-icon">◈</span> Team Structure</a></li>
+            </ul>
+        </details>
+
+        <main>
+            <div class="content-body">
+<h1 id="scenario-04-the-ghost-train">Scenario 04: The Ghost Train</h1>
+<p><strong>Adversary intelligence in public opinion and large-scale political projects</strong></p>
+<p>This scenario immerses you in the world of informational influence campaigns and large-scale public opinion analysis.</p>
+<section id="briefing">
+<h2 id="briefing-the-ghost-train">Briefing: The Ghost Train</h2>
+<p><strong>Context:</strong></p>
+<p>A controversial mega-project, a high-speed train, is facing widespread public opposition. The government has launched a massive public relations campaign to win over public opinion, but there are suspicions that the campaign is using disinformation and manipulation tactics.</p>
+<p><strong>Mission:</strong></p>
+<p>As an intelligence team, your mission is to:</p>
+<ol>
+<li><strong>Analyze the government's PR campaign</strong> and identify any disinformation or manipulation tactics.</li>
+<li><strong>Assess the impact of the campaign</strong> on public opinion.</li>
+<li><strong>Identify the key actors</strong> behind the campaign.</li>
+<li><strong>Propose a strategy</strong> to counter the disinformation and promote an informed public debate.</li>
+</ol>
+<p><strong>Learning Objectives:</strong></p>
+<ul>
+<li><strong>Informational influence analysis:</strong> How to analyze and counter disinformation campaigns.</li>
+<li><strong>Public opinion analysis:</strong> How to assess and understand public opinion.</li>
+<li><strong>Narrative analysis:</strong> How to identify and analyze the narratives used in influence campaigns.</li>
+<li><strong>Strategic communication:</strong> How to develop and implement effective communication strategies.</li>
+</ul>
+</section>
+<section id="team">
+<h1 id="team-structure-the-ghost-train">Team Structure: The Ghost Train</h1>
+<p>This team reflects real structures of strategic information operations.</p>
+<ul>
+<li><strong>Information Strategy Director:</strong> Defines narrative objectives, priority audiences, desired political outcomes.</li>
+<li><strong>Social Sentiment Intelligence Analyst:</strong> Analyzes social media conversations, public opinion trends, prevailing emotions. Identifies sensitive topics, most influenceable groups.</li>
+<li><strong>Narrative Mapping Specialist:</strong> Builds maps of dominant narratives, recurring arguments, influential actors in the discourse.</li>
+<li><strong>Behavioral Influence Analyst:</strong> Studies which messages generate the most reaction, which emotions mobilize the population, which narrative frameworks change perceptions.</li>
+<li><strong>Network Amplification Analyst:</strong> Identifies key dissemination nodes, social influencers, active digital communities.</li>
+</ul>
+</section>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-inner">
+                <span class="footer-disclaimer">PLAYA DEL CRIMEN // EDUCATIONAL SIMULATION // FICTIONAL SCENARIOS // FOR TRAINING PURPOSES ONLY</span>
+                <a href="../index.html" class="footer-back">← Back to Home</a>
+            </div>
+        </footer>
+
+    </div><!-- /scenario-content -->
+
+    </div><!-- /layout-scenario -->
+
+    <script>
+    // Sidebar active state on scroll
+    (function() {
+        const links = document.querySelectorAll('.sidebar-nav a[href^="#"]');
+        const sections = [];
+        links.forEach(function(link) {
+            const id = link.getAttribute('href').slice(1);
+            const el = document.getElementById(id);
+            if (el) sections.push({ el: el, link: link });
+        });
+
+        function onScroll() {
+            let current = null;
+            sections.forEach(function(s) {
+                if (window.scrollY >= s.el.offsetTop - 100) current = s;
+            });
+            links.forEach(function(l) { l.classList.remove('active'); });
+            if (current) current.link.classList.add('active');
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    })();
+    </script>
+
+</body>
+</html>

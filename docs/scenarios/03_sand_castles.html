@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scenario 03: Sand Castles | Playa del Crimen</title>
+    <meta name="description" content="Digital identity tracking and behavioral profiling in real estate fraud.">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-scenario">
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-inner">
+            <a href="../index.html" class="header-logo">
+                <span class="logo-main">Playa del <span>Crimen</span></span>
+                <span class="logo-sub">Intelligence Training Platform</span>
+            </a>
+
+            <nav class="header-nav">
+                <a href="../index.html">← Scenarios</a>
+                <a href="https://github.com/CCHUTZ/playa-del-crimen-en" target="_blank" rel="noopener">GitHub ↗</a>
+            </nav>
+
+            <div class="header-status">
+                <span class="status-dot"></span>
+                <span class="mono">SCENARIO 03: SAND CASTLES</span>
+            </div>
+
+            <button class="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== LAYOUT WRAPPER ===== -->
+    <div class="layout-scenario">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+        <p class="sidebar-label">Operation Phases</p>
+        <ul class="sidebar-nav">
+            <li><a href="#briefing"><span class="nav-icon">◈</span> Briefing</a></li>
+            <li><a href="#team"><span class="nav-icon">◈</span> Team Structure</a></li>
+        </ul>
+        <div class="sidebar-divider"></div>
+        <ul class="sidebar-nav">
+            <li><a href="../index.html"><span class="nav-icon">←</span> Back to Home</a></li>
+        </ul>
+    </aside>
+
+    <!-- ===== CONTENT ===== -->
+    <div class="scenario-content">
+
+        <!-- Scenario Hero -->
+        <div class="scenario-hero">
+            <div class="scenario-meta">
+                <span class="scenario-number">SCENARIO 03</span>
+                <span class="scenario-category">OSINT · Fraud · Digital Identity</span>
+            </div>
+            <h1>Sand Castles</h1>
+            <p class="scenario-tagline">Digital identity tracking and behavioral profiling in real estate fraud.</p>
+        </div>
+
+        <!-- Mobile nav -->
+        <details class="mobile-nav-toggle">
+            <summary>Operation Phases</summary>
+            <ul class="sidebar-nav">
+            <li><a href="#briefing"><span class="nav-icon">◈</span> Briefing</a></li>
+            <li><a href="#team"><span class="nav-icon">◈</span> Team Structure</a></li>
+            </ul>
+        </details>
+
+        <main>
+            <div class="content-body">
+<h1 id="scenario-03-sand-castles">Scenario 03: Sand Castles</h1>
+<p><strong>Adversary intelligence in real estate fraud and fugitive tracking</strong></p>
+<p>This scenario immerses you in digital identity tracking and behavioral profiling techniques in real estate fraud cases.</p>
+<section id="briefing">
+<h2 id="briefing-sand-castles">Briefing: Sand Castles</h2>
+<p><strong>Context:</strong></p>
+<p>A real estate developer has defrauded hundreds of investors in a luxury housing project in Playa del Crimen. The developer has disappeared with the investors' money, leaving behind a trail of shell companies and false identities.</p>
+<p><strong>Mission:</strong></p>
+<p>As an intelligence team, your mission is to:</p>
+<ol>
+<li><strong>Trace the developer's digital footprint</strong> and identify their true identity.</li>
+<li><strong>Reconstruct the developer's network</strong> of associates and shell companies.</li>
+<li><strong>Analyze the developer's behavioral patterns</strong> to predict their next move.</li>
+<li><strong>Locate the developer</strong> and bring them to justice.</li>
+</ol>
+<p><strong>Learning Objectives:</strong></p>
+<ul>
+<li><strong>Digital identity tracking:</strong> How to trace and analyze digital footprints.</li>
+<li><strong>Behavioral profiling:</strong> How to analyze behavioral patterns to predict future actions.</li>
+<li><strong>Network analysis:</strong> How to map and analyze complex criminal networks.</li>
+<li><strong>Fugitive tracking:</strong> How to use OSINT to locate fugitives.</li>
+</ul>
+</section>
+<section id="team">
+<h1 id="team-structure-sand-castles">Team Structure: Sand Castles</h1>
+<p>This team combines digital forensics, behavioral analysis, and fugitive tracking expertise.</p>
+<ul>
+<li><strong>Digital Forensics Analyst:</strong> Traces the developer's digital footprint and recovers evidence.</li>
+<li><strong>Behavioral Analyst:</strong> Analyzes the developer's behavioral patterns and predicts their next move.</li>
+<li><strong>Network Analyst:</strong> Maps and analyzes the developer's network of associates and shell companies.</li>
+<li><strong>OSINT Analyst:</strong> Collects and analyzes open-source information to locate the developer.</li>
+<li><strong>Fugitive Recovery Specialist:</strong> Coordinates the effort to apprehend the developer.</li>
+</ul>
+</section>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-inner">
+                <span class="footer-disclaimer">PLAYA DEL CRIMEN // EDUCATIONAL SIMULATION // FICTIONAL SCENARIOS // FOR TRAINING PURPOSES ONLY</span>
+                <a href="../index.html" class="footer-back">← Back to Home</a>
+            </div>
+        </footer>
+
+    </div><!-- /scenario-content -->
+
+    </div><!-- /layout-scenario -->
+
+    <script>
+    // Sidebar active state on scroll
+    (function() {
+        const links = document.querySelectorAll('.sidebar-nav a[href^="#"]');
+        const sections = [];
+        links.forEach(function(link) {
+            const id = link.getAttribute('href').slice(1);
+            const el = document.getElementById(id);
+            if (el) sections.push({ el: el, link: link });
+        });
+
+        function onScroll() {
+            let current = null;
+            sections.forEach(function(s) {
+                if (window.scrollY >= s.el.offsetTop - 100) current = s;
+            });
+            links.forEach(function(l) { l.classList.remove('active'); });
+            if (current) current.link.classList.add('active');
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    })();
+    </script>
+
+</body>
+</html>
